@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:.4rem 1rem;
+    border:1px solid transparent;
+}
