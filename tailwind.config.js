@@ -4,9 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     colors:{
-      'purple3':'#896bff ',
-      'purple2':'#8a3eff ',
-      'purple': '#9638e5',
+      'guray':'#333333',
+      'guray2': '#f7f7fa',
       'dark':'#000000',
       'light':'#ffffff',
     },

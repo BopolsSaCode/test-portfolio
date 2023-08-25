@@ -8,8 +8,103 @@
     padding: 1.5rem;
 }
 
-.btn{
+.btn {
     display:inline-block;
     padding:.4rem 1rem;
     border:1px solid transparent;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.h-main {
+    font-size: 1.5rem;
+    opacity: 95%;
+}
+
+.h-text {
+    opacity:50%;
+    font-weight:500
+}
+
+.a-img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.btn.bg--light{
+    @apply bg-light border-[1px] border-guray  hover:bg-guray hover:text-light rounded-full hover:ease-in hover:duration-200
+}
+
+.btn.bg--dark{
+    @apply bg-guray border-[1px] hover:bg-light hover:text-dark hover:border-guray rounded-full hover:ease-in hover:duration-200
+}
+
+
+/*--header--*/
+
+@layer components{
+    .header__nav ul{
+        @apply gap-[2rem]
+    }
+
+    .header__nav ul li{
+        @apply hover:opacity-[100%] hover:ease-in hover:duration-300
+    }
+}
+
+/*--hero--*/
+
+@layer components{
+    .hero{
+        @apply pt-[5rem]
+    }
+    .hero__wrapper {
+        @apply d-flex justify-center gap-[2rem] items-center
+    }
+
+    .hero__content {
+        @apply flex flex-col gap-[1rem]
+    }
+
+    .hero__text{
+        @apply leading-[1.2] text-center
+    }
+
+    .hero__btn ul {
+        @apply gap-[1rem]
+    }
+
+}
+
+/*--skills--*/
+
+@layer components{
+
+    .skills {
+        @apply pt-[14rem]
+    }
+    
+    .skills__content p {
+        @apply text-[.9rem] font-medium
+    }
+
+    .skills__content {
+        @apply opacity-[45%] items-center flex flex-col
+    }
+
+    .skills__content ul {
+        @apply text-[1.8rem] flex flex-row gap-[2.2rem]
+    }
+}
+
+/*--Get to know--*/
+
+@layer components{
+    .h-about {
+        @apply bg-guray2    
+    }
 }
