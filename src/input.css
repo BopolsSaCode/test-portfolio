@@ -48,11 +48,23 @@
 
 @layer components{
     .header__nav ul{
-        @apply gap-[2rem]
+        @apply gap-[2rem] hidden
     }
 
     .header__nav ul li{
         @apply hover:opacity-[100%] hover:ease-in hover:duration-300
+    }
+
+    .header__wrapper {
+        @apply flex justify-between items-center
+    }
+
+    .burger {
+        @apply flex flex-col gap-[.2rem]
+    }
+
+    .burger span {
+        @apply inline-block bg-guray w-[1.5rem] h-[.1rem]
     }
 }
 
@@ -60,10 +72,10 @@
 
 @layer components{
     .hero{
-        @apply pt-[5rem]
+        @apply lg:pt-[5rem]
     }
     .hero__wrapper {
-        @apply d-flex justify-center gap-[2rem] items-center
+        @apply flex flex-col justify-center gap-[2rem] items-center
     }
 
     .hero__content {
@@ -85,7 +97,7 @@
 @layer components{
 
     .skills {
-        @apply pt-[14rem]
+        @apply pt-[3.5rem]
     }
     
     .skills__content p {
@@ -104,7 +116,21 @@
 /*--Get to know--*/
 
 @layer components{
-    .h-about {
-        @apply bg-guray2    
+    .h-work {
+        @apply bg-guray2 py-[2rem]
+    }
+    .h-about__content {
+        @apply flex flex-col items-center gap-[2rem] text-justify
+    }
+}
+
+/*--Work Together--*/
+
+@layer components{
+    .h-work {
+        @apply bg-guray2 py-[2rem]
+    }
+    .h-work__content {
+        @apply flex flex-col items-center gap-[2rem] text-justify
     }
 }
